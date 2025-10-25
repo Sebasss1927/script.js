@@ -9,7 +9,7 @@
 <body>
   <header class="navbar">
     <div class="logo">
-      <img src="https://cdn-icons-png.flaticon.com/512/3437/3437349.png" alt="Logo NEXO" class="logo-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/3437/3437349.png" class="logo-icon">
       <h1>NEXO</h1>
     </div>
     <nav>
@@ -21,11 +21,23 @@
       <a href="contacto.html">Contacto</a>
       <a href="juego.html">Juego</a>
     </nav>
+    <button id="modoBtn">🌙</button>
+    <div class="carrito-icono" id="carritoBtn">🛒 <span id="contadorCarrito">0</span></div>
   </header>
 
-  <main class="juego-container">
+  <div class="carrito-panel" id="carritoPanel">
+    <h3>🛍️ Tu Carrito</h3>
+    <ul id="listaCarrito"></ul>
+    <p id="totalCarrito">Total: S/ 0.00</p>
+    <button id="finalizarCompra">Finalizar Compra</button>
+    <button id="cerrarCarrito">Cerrar</button>
+  </div>
+
+  <div id="notificacion"></div>
+
+  <main class="juego-container fade-in">
     <h2>🎮 Minijuego NEXO</h2>
-    <p>Haz clic en el cuadrado azul lo más rápido posible y gana puntos!</p>
+    <p>Haz clic en el cuadro azul lo más rápido posible para ganar puntos!</p>
 
     <div id="area-juego">
       <div id="cuadro"></div>
@@ -38,7 +50,7 @@
   <footer>
     <p>© 2025 NEXO Gaming - Todos los derechos reservados</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
+
