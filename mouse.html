@@ -21,42 +21,45 @@
       <a href="contacto.html">Contacto</a>
       <a href="juego.html">Juego</a>
     </nav>
+
+    <button id="modoBtn">🌙</button>
+    <div class="carrito-icono" id="carritoBtn">🛒 <span id="contadorCarrito">0</span></div>
   </header>
 
-  <section class="categoria">
+  <div class="carrito-panel" id="carritoPanel">
+    <h3>🛍️ Tu Carrito</h3>
+    <ul id="listaCarrito"></ul>
+    <p id="totalCarrito">Total: S/ 0.00</p>
+    <button id="finalizarCompra">Finalizar Compra</button>
+    <button id="cerrarCarrito">Cerrar</button>
+  </div>
+
+  <div id="notificacion"></div>
+
+  <section class="categoria fade-in">
     <h2>🖱️ Mouse Gamer</h2>
-    <p>Precisión, velocidad y comodidad: elige el mouse que se adapta a tu estilo.</p>
+    <p>Precisión, velocidad y control: elegí tu compañero ideal.</p>
 
     <div class="productos-grid">
       <div class="producto">
-        <img src="https://cdn.thewirecutter.com/wp-content/media/2022/10/gamingmice-2048px-logitech-g502-hero-2x1-1.jpg" alt="Mouse RGB Pro" />
+        <img src="https://cdn.thewirecutter.com/wp-content/media/2022/10/gamingmice-2048px-logitech-g502-hero-2x1-1.jpg" />
         <h3>Mouse RGB Pro</h3>
-        <p>Sensor óptico 16K DPI con luces RGB dinámicas.</p>
+        <p>Sensor óptico 16K DPI, cable mallado y luces RGB.</p>
         <span class="precio">S/ 109.00</span>
         <button class="btn-comprar">Añadir al carrito</button>
       </div>
-
       <div class="producto">
-        <img src="https://m.media-amazon.com/images/I/61bhvNfPpUL._AC_UF894,1000_QL80_.jpg" alt="Mouse Ultraligero" />
+        <img src="https://m.media-amazon.com/images/I/61bhvNfPpUL._AC_UF894,1000_QL80_.jpg" />
         <h3>Mouse Ultraligero</h3>
-        <p>Diseño tipo panal, ideal para juegos FPS competitivos.</p>
+        <p>Diseño tipo panal, liviano y veloz para eSports.</p>
         <span class="precio">S/ 89.00</span>
         <button class="btn-comprar">Añadir al carrito</button>
       </div>
-
       <div class="producto">
-        <img src="https://cdn.mos.cms.futurecdn.net/RqXyPoSxTfY9A4hXxDq6Cb.jpg" alt="Mouse Precisión 2K" />
+        <img src="https://cdn.mos.cms.futurecdn.net/RqXyPoSxTfY9A4hXxDq6Cb.jpg" />
         <h3>Mouse Precisión 2K</h3>
-        <p>DPI ajustable hasta 20 000, precisión garantizada.</p>
+        <p>20,000 DPI ajustables, precisión extrema.</p>
         <span class="precio">S/ 129.00</span>
-        <button class="btn-comprar">Añadir al carrito</button>
-      </div>
-
-      <div class="producto">
-        <img src="https://cdn.mos.cms.futurecdn.net/64db3d1a19c88e0b8c6b3a29-1200-80.jpg" alt="Mouse ErgoGrip" />
-        <h3>Mouse ErgoGrip</h3>
-        <p>Diseño ergonómico para sesiones largas sin fatiga.</p>
-        <span class="precio">S/ 79.00</span>
         <button class="btn-comprar">Añadir al carrito</button>
       </div>
     </div>
@@ -65,5 +68,7 @@
   <footer>
     <p>© 2025 NEXO Gaming - Todos los derechos reservados</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
