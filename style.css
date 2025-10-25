@@ -98,3 +98,4 @@ nav a:hover { color: var(--primario); text-shadow: var(--neon); }
   .hero-img{width:100%;}
   nav{flex-wrap:wrap;justify-content:center;}
 }
+
