@@ -9,7 +9,7 @@
 <body>
   <header class="navbar">
     <div class="logo">
-      <img src="https://cdn-icons-png.flaticon.com/512/3437/3437349.png" alt="Logo NEXO" class="logo-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/3437/3437349.png" class="logo-icon">
       <h1>NEXO</h1>
     </div>
     <nav>
@@ -21,49 +21,46 @@
       <a href="contacto.html">Contacto</a>
       <a href="juego.html">Juego</a>
     </nav>
+    <button id="modoBtn">🌙</button>
+    <div class="carrito-icono" id="carritoBtn">🛒 <span id="contadorCarrito">0</span></div>
   </header>
 
-  <main class="contacto">
-    <h2>¿Tienes dudas? Contáctanos</h2>
-    <p>Estamos aquí para ayudarte.</p>
+  <div class="carrito-panel" id="carritoPanel">
+    <h3>🛍️ Tu Carrito</h3>
+    <ul id="listaCarrito"></ul>
+    <p id="totalCarrito">Total: S/ 0.00</p>
+    <button id="finalizarCompra">Finalizar Compra</button>
+    <button id="cerrarCarrito">Cerrar</button>
+  </div>
+
+  <div id="notificacion"></div>
+
+  <main class="contacto fade-in">
+    <h2>📬 Contáctanos</h2>
+    <p>Estamos aquí para ayudarte con tu compra o duda gamer 💪</p>
 
     <div class="contacto-grid">
       <div class="formulario">
-        <h3>Envíanos un mensaje</h3>
+        <h3>Déjanos un mensaje</h3>
         <form>
           <input type="text" placeholder="Tu nombre" required>
           <input type="email" placeholder="Tu correo" required>
-          <input type="tel" placeholder="Tu teléfono">
-          <textarea placeholder="Cuéntanos cómo podemos ayudarte..." required></textarea>
-          <button type="submit">Enviar mensaje</button>
+          <textarea placeholder="Tu mensaje..." required></textarea>
+          <button type="submit">Enviar</button>
         </form>
       </div>
-
       <div class="info-contacto">
-        <h3>Información de contacto</h3>
+        <h3>Datos de contacto</h3>
         <p>📍 Av. Javier Prado 1234, Lima</p>
         <p>📞 +51 999 888 777</p>
         <p>✉️ contacto@nexogamer.pe</p>
-        <p>🕒 Lunes a Sábado: 10:00 - 20:00</p>
-
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.9999999999995!2d-77.033!3d-12.08!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf2a2a0b!2sLima%20Perú!5e0!3m2!1ses!2spe!4v0000000000000"
-          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
       </div>
-    </div>
-
-    <div class="redes">
-      <h3>Síguenos en redes</h3>
-      <p>📸 Instagram: @nexogamer</p>
-      <p>🐦 Twitter: @nexogaming</p>
-      <p>💬 Discord: NEXO Gaming</p>
-      <p>▶️ YouTube: NEXO Gaming</p>
     </div>
   </main>
 
   <footer>
     <p>© 2025 NEXO Gaming - Todos los derechos reservados</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
